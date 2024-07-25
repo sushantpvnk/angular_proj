@@ -28,7 +28,7 @@ jobs:
 
       - name: Build Angular project
         if: ${{ steps.test.outcome == 'success' }}
-        run: npm run build -- --prod
+        run: npm run build -- --configuration production
 
       - name: Install AWS CLI
         run: |
